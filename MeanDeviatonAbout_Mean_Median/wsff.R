@@ -1,0 +1,20 @@
+x=c(1.2,1.4,1.3,1.6,1.0,1.5,1.7,1.1,1.2,1.3)
+y=summary(x)
+print(y)
+range=1.7-1.0
+print(range)
+z=var(x)
+sd=sqrt(z)
+cat("variance",z)
+cat("standard deviation",sd)
+#mean deviation about mean 
+l=(x-mean(x))
+l=abs(l)
+md1=sum(l)/length(l)
+print("mean deviation about mean")
+print(md1)
+#mean deviation about median
+k=abs(x-median(x))
+md2=sum(k)/length(k)
+print("mean deviation about median")
+print(md2)
