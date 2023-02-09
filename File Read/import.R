@@ -1,0 +1,6 @@
+x<-read.csv(file="C:/Users/Anirudh/OneDrive/Desktop/fraudData.csv",header=TRUE,sep=",")
+y<-mean(x$balance)
+x<-read.delim(file="C:/Users/Anirudh/OneDrive/Desktop/fraudData.txt",header=TRUE,sep="\t")
+print(x)
+y<-mean(x$balance)
+cat(y)
